@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador challenge</title>
+</head>
+
+<body>
+    <div class="seccion1">
+        
+        <div class="logotipo">
+            <img src="logo.png" alt="">
+        </div>
+
+        <div class="contenedor1">
+            <div class="contenedorcajatexto">
+                <textarea placeholder="Ingrese texto aqui" class="cajatexto" onkeypress="return ' abcdefghijklmnñopqrstuvwxyz'.includes(event.key)"></textarea>
+            </div>
+
+            <div class="alerta">
+                <img src="alerta.png" alt=" Solo letras minúsculas y sin acentos">Solo letras minúsculas y sin acentos</img>
+            </div>
+
+            <div class="contenedor-botones">
+                <br>
+                <input type="button" class="btn-encriptar" onclick="encriptar()" value="Encriptar">
+                <input type="button" class="btn-desencriptar" onclick="desencriptar()" value="Desencriptar">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="seccion2">
+        <div class="contenedor2">
+            <div class="contenedor-resultado">
+                <textarea readonly class="texto-resultado"></textarea>
+            </div>
+            
+            <div class="ocultar-div">
+                
+                
+                <div id="textos-informativos">
+                    <img class="sin-texto-imagen" src="sin-texto.png" alt="">
+                    <p class="sin-mensaje">Ningún mensaje fue encontrado</p>
+                    <p class="ingresa-texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+
+            <input type="button" class="botonCopiar" value="copiar resultado">
+            
+        </div>
+    </div>
+    
+    
+    <footer class="pie">
+        <p class="texto-pie">Luis Vele | Santo Domingo - Ecuador | Estudiante Oracle Next Education - G6 One 2024 </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
